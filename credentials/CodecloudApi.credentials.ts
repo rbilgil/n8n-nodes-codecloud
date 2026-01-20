@@ -10,8 +10,9 @@ export class CodecloudApi implements ICredentialType {
 
 	displayName = 'Codecloud API';
 
-	// Link to your community node's README
-	documentationUrl = 'https://github.com/org/-codecloud?tab=readme-ov-file#credentials';
+	documentationUrl = 'https://codecloud.dev/docs';
+
+	icon = { light: 'file:codecloud.svg', dark: 'file:codecloud.dark.svg' } as const;
 
 	properties: INodeProperties[] = [
 		{
@@ -21,6 +22,8 @@ export class CodecloudApi implements ICredentialType {
 			typeOptions: { password: true },
 			required: true,
 			default: '',
+			description:
+				'Your Codecloud API key. Get it from your Codecloud dashboard. Keys start with "cc_".',
 		},
 	];
 
@@ -28,15 +31,16 @@ export class CodecloudApi implements ICredentialType {
 		type: 'generic',
 		properties: {
 			headers: {
-				'x-api-key': '={{$credentials.apiKey}}',
+				Authorization: '=Bearer {{$credentials.apiKey}}',
 			},
 		},
 	};
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'https://codecloud.dev/api',
-			url: '/v1/user',
+			baseURL: 'https://codecloud.dev/api/v1',
+			url: '/agents',
+			method: 'GET',
 		},
 	};
 }

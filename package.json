@@ -1,14 +1,14 @@
 {
   "name": "n8n-nodes-codecloud",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for Codecloud - run AI coding agents in the cloud",
   "license": "MIT",
-  "homepage": "",
-  "keywords": ["n8n-community-node-package"],
+  "homepage": "https://codecloud.dev",
+  "keywords": ["n8n-community-node-package", "codecloud", "ai", "coding-agent", "github"],
   "author": { "name": "Robin Bilgil", "email": "robin@talkmachine.com" },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/robinbilgil/n8n-nodes-codecloud.git"
   },
   "scripts": {
     "build": "n8n-node build",

@@ -1,6 +1,5 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
-import { userDescription } from './resources/user';
-import { companyDescription } from './resources/company';
+import { agentRunDescription } from './resources/agentRun';
 
 export class Codecloud implements INodeType {
 	description: INodeTypeDescription = {
@@ -10,7 +9,7 @@ export class Codecloud implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
-		description: 'Interact with the Codecloud API',
+		description: 'Run AI coding agents in the cloud with Codecloud',
 		defaults: {
 			name: 'Codecloud',
 		},
@@ -33,18 +32,13 @@ export class Codecloud implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'User',
-						value: 'user',
-					},
-					{
-						name: 'Company',
-						value: 'company',
+						name: 'Agent Run',
+						value: 'agentRun',
 					},
 				],
-				default: 'user',
+				default: 'agentRun',
 			},
-			...userDescription,
-			...companyDescription,
+			...agentRunDescription,
 		],
 	};
 }
