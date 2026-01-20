@@ -5,10 +5,10 @@
     "license": "MIT",
     "homepage": "https://codecloud.dev",
     "keywords": ["n8n-community-node-package", "codecloud", "ai", "coding-agent", "github"],
-    "author": { "name": "Robin Bilgil", "email": "robin@talkmachine.com" },
+    "author": { "name": "Robin Bilgil", "email": "robin.bilgil@gmail.com" },
     "repository": {
         "type": "git",
-        "url": "https://github.com/robinbilgil/n8n-nodes-codecloud.git"
+        "url": "https://github.com/rbilgil/n8n-nodes-codecloud.git"
     },
     "scripts": {
         "build": "n8n-node build",

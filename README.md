@@ -23,7 +23,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 - **Create Run** - Create a new AI agent run on a GitHub repository
 - **Get Many** - Retrieve a list of agent runs
-- **Get Run** - Get the details of a specific agent run
+- **Get run** - Get the details of a specific agent run
 - **Send Follow-Up** - Send a follow-up prompt to continue a completed agent run
 
 ## Credentials

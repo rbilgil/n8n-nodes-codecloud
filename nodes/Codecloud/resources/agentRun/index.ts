@@ -19,7 +19,7 @@ export const agentRunDescription: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Create Run',
+				name: "Create Run",
 				value: "create",
 				action: "Create an agent run",
 				description: "Create a new AI agent run on a GitHub repository",
@@ -31,9 +31,9 @@ export const agentRunDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Many',
+				name: "Get Many",
 				value: "getAll",
-				action: "Get agent runs",
+				action: "List agent runs",
 				description: "Retrieve a list of agent runs",
 				routing: {
 					request: {
@@ -53,7 +53,7 @@ export const agentRunDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Run',
+				name: "Get Run",
 				value: "get",
 				action: "Get an agent run",
 				description: "Get the details of a specific agent run",
@@ -65,7 +65,7 @@ export const agentRunDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Send Follow-Up',
+				name: "Send Follow-Up",
 				value: "sendMessage",
 				action: "Send a follow up message",
 				description:
