@@ -55,7 +55,7 @@ export const agentRunCreateDescription: INodeProperties[] = [
 		},
 		placeholder: "claude-sonnet-4-5",
 		description:
-			"AI model to use. Check https://models.dev/ for available models",
+			"AI model to use. Check https://models.dev/ for available models.",
 		routing: {
 			send: {
 				type: "body",

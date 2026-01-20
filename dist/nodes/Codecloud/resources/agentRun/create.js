@@ -54,7 +54,7 @@ exports.agentRunCreateDescription = [
             show: showOnlyForAgentRunCreate,
         },
         placeholder: "claude-sonnet-4-5",
-        description: "AI model to use. Check https://models.dev/ for available models",
+        description: "AI model to use. Check https://models.dev/ for available models.",
         routing: {
             send: {
                 type: "body",
